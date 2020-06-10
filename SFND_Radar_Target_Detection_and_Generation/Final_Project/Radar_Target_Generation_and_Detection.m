@@ -25,8 +25,8 @@ slope_of_chirp = b_sweep / Tchirp;
 % *%TODO* :
 % define the target's initial position and velocity. Note : Velocity
 % remains contant
-initial_range = 50;
-initial_velo = -35; 
+initial_range = 70;
+initial_velo = 45; 
 
 
 %% FMCW Waveform Generation
@@ -164,18 +164,18 @@ figure,surf(doppler_axis,range_axis,RDM);
 
 % *%TODO* :
 %Select the number of Training Cells in both the dimensions.
-Tr = 10;
-Td = 8;
+Tr = 3;
+Td = 3;
 
 % *%TODO* :
 %Select the number of Guard Cells in both dimensions around the Cell under 
 %test (CUT) for accurate estimation
-Gr = 3;
-Gd = 3;
+Gr = 1;
+Gd = 1;
 
 % *%TODO* :
 % offset the threshold by SNR value in dB
-offset = 4.5;
+offset = 6.5;
 
 % *%TODO* :
 %Create a vector to store noise_level for each iteration on training cells
